@@ -3,7 +3,7 @@ const http = require('http');
 console.log('Inicio de programa');
 fs.readFile('archivo.txt','utf8',(err,data) => {
     if(err){
-        console.error('Error al leer el archivo:'. err);
+        console.error('Error al leer el archivo:', err);
         return;
     }
     const server = http.createServer((req,res) => {
